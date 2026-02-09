@@ -296,13 +296,11 @@ export default function PortfolioApp() {
                             <Linkedin className="h-4 w-4" />
                         </IconLink>
 
-                        {/* keep the rest (Resume / Contact button) */}
                     </div>
 
                 </div>
             </header >
 
-            {/* Mobile nav */}
             < div className="border-b border-white/5 bg-background/50 backdrop-blur md:hidden" >
                 <div className="mx-auto max-w-6xl px-4 py-2">
                     <div className="flex flex-wrap gap-2">
@@ -322,11 +320,9 @@ export default function PortfolioApp() {
             </div >
 
             <main className="mx-auto max-w-6xl px-4">
-                {/* HERO */}
                 <section id="home" className="scroll-mt-24 py-16 md:py-20">
                     <motion.div variants={stagger} initial="hidden" animate="show" className="grid gap-6 md:grid-cols-12">
                         <motion.div variants={fadeUp} className="md:col-span-7">
-                            {/* border removed + glass */}
                             <Card className="overflow-hidden rounded-3xl border-0 bg-card/60 shadow-xl shadow-black/20 ring-1 ring-white/10">
                                 <CardHeader className="space-y-3">
                                     <div className="flex flex-wrap items-center gap-2">
@@ -387,7 +383,6 @@ export default function PortfolioApp() {
                                     <TechIcons technologies={["React.js", "JavaScript (ES6+)", "Tailwind CSS", "Java", "C#", "SQL"]} />
 
                                     <div className="flex flex-wrap items-center gap-2">
-                                        {/* ✅ View Projects button upgraded */}
                                         <Button
                                             className={cn(
                                                 "rounded-xl text-white border-2 border-transparent",
