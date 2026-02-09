@@ -468,7 +468,7 @@ export default function PortfolioApp() {
                                         boundaries, API correctness, and observability.
                                     </p>
                                     <p>
-                                        I’m especially interested in microservices and workflow orchestration — designing systems that handle retries, failures,
+                                        I’m especially interested in designing systems that handle retries, failures,
                                         and long-running processes safely.
                                     </p>
 
@@ -497,8 +497,8 @@ export default function PortfolioApp() {
                                 <CardContent className="space-y-3">
                                     {[
                                         { icon: <Briefcase className="h-4 w-4 text-cyan-200" />, text: "Full-stack / backend-leaning roles" },
-                                        { icon: <Workflow className="h-4 w-4 text-violet-200" />, text: "Microservices, orchestration, scalable APIs" },
-                                        { icon: <Sparkles className="h-4 w-4 text-sky-200" />, text: "Teams that value quality + iteration" },
+                                        { icon: <Workflow className="h-4 w-4 text-violet-200" />, text: "Scalable APIs" },
+                                        { icon: <Sparkles className="h-4 w-4 text-sky-200" />, text: "Teams that value quality" },
                                     ].map((row) => (
                                         <div key={row.text} className="flex items-start gap-3 rounded-2xl bg-card dark:bg-card/60 dark:bg-white/5 p-3 ring-1 ring-white/10">
                                             <div className="mt-0.5 flex h-8 w-8 items-center justify-center rounded-2xl bg-card dark:bg-card/60 dark:bg-white/5 ring-1 ring-white/10">
