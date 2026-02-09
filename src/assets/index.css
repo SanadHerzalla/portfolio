@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* ---------- LIGHT MODE (default) ---------- */
+:root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: 252 83% 62%;
+    --primary-foreground: 0 0% 100%;
+}
+
+/* ---------- DARK MODE ---------- */
+.dark {
+    --background: 222 47% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --muted: 222 36% 14%;
+    --muted-foreground: 215 20% 70%;
+
+    --border: 223 36% 18%;
+    --input: 223 36% 18%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: hsl(var(--foreground));
+    background: hsl(var(--background));
+}
+
+/* DARK MODE background */
+.dark body {
+    background:
+        radial-gradient(1200px 600px at 20% 10%, rgba(124, 58, 237, 0.22), transparent 60%),
+        radial-gradient(900px 500px at 80% 20%, rgba(59, 130, 246, 0.20), transparent 55%),
+        radial-gradient(900px 600px at 50% 100%, rgba(99, 102, 241, 0.16), transparent 55%),
+        hsl(var(--background));
+}
+
+[data-state="active"] {
+    box-shadow: none !important;
+}
