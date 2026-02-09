@@ -1,5 +1,4 @@
 import "./index.css";
-import { Moon, Sun } from "lucide-react";
 import React, { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -53,17 +52,7 @@ function cn(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
 }
 
-function pillColor(i: number) {
-    // more colorful, modern chips
-    const palette = [
-        "bg-white/5 text-foreground ring-1 ring-white/10",
-        "bg-cyan-500/10 text-cyan-100 ring-1 ring-cyan-400/20",
-        "bg-violet-500/10 text-violet-100 ring-1 ring-violet-400/20",
-        "bg-sky-500/10 text-sky-100 ring-1 ring-sky-400/20",
-        "bg-fuchsia-500/10 text-fuchsia-100 ring-1 ring-fuchsia-400/20",
-    ];
-    return palette[i % palette.length];
-}
+
 
 type Project = {
     name: string;
@@ -75,18 +64,9 @@ type Project = {
 };
 
 export default function PortfolioApp() {
-    const [theme, setTheme] = useState<"dark" | "light">("dark");
-
     useEffect(() => {
-        const root = document.documentElement;
-
-        if (theme === "dark") {
-            root.classList.add("dark");
-        } else {
-            root.classList.remove("dark");
-        }
-    }, [theme]);
-
+        document.documentElement.classList.add("dark");
+    }, []);
 
     const profile = useMemo(
         () => ({
